@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from 8siannft.com/christmas/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Jan 2022 21:57:35 GMT -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="../images/logo.jpg">
+  <meta property="twitter:image" content="../images/logo.jpg">
+  <meta name="description"
+    content="In the spirit of giving, the team at 8SIAN have created Holiday and Christmas 3D Cards free to mint. It can be used to trade, gifted or exchanged with friends and family. Have a wonderful holiday and Merry Christmas!">
+  <link rel="shortcut icon" type="image/jpg" href="images/favicon.html" />
+  <title>8SIAN</title>
+  <link rel="stylesheet" href="../css/mdb.min.css" />
+  <link rel="stylesheet" href="mainf9e3.css?v=1.1">
+  <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
+    integrity="sha512-O03ntXoVqaGUTAeAmvQ2YSzkCvclZEcPQu1eqloPaHfJ5RuNGiS4l+3duaidD801P50J28EHyonCV06CUlTSag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: #000000;" style="font-size:13px;color:white;">
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <div id="intro" class="bg-image">
+    <div style="backdrop-filter: blur(2.5px);">
+      <div class="container align-items-center text-center" style="min-height:100vh;">
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 justify-content-center text-center">
+            <div class="pt-3">
+              <img style="width:25%;min-width:33vh;" src="../images/8SIAN%20WHITE%20LOGO.png">
+            </div>
+            <h1 style="font-family: MadelynFill;color:rgb(255, 22, 22);font-size:10vh;">
+              Dear, 8sian fam,
+            </h1>
+            <div class="bg-image mx-auto"
+              style="margin-top:-30px;margin-bottom: -30px;align-items: center;display: flex;background-image: url('screen_2x.webp');background-repeat: no-repeat;background-position: center; width: 55vh;height: 55vh;">
+              <h1 style="font-family: VintageRotter;color:white;font-size:16vh;">Merry Christmas</h1>
+            </div>
+
+
+            <div class="row justify-content-center" style="position: relative;">
+              <h3 style="font-family: Kollektif;color:white;font-size:medium;line-height: 1.34;letter-spacing: 0.2em;">
+                FREE TO MINT, 3 UNIQUE HOLIDAY CARDS</h3>
+              <div class="col-9">
+                <div class="row">
+                  <div class="col-12 col-md-6 justify-content-center p-2 p-md-0">
+                    <button type="button" data-mdb-toggle="modal" data-mdb-target="#buy" class="btn btn-rounded"
+                      style="font-family: lazy_dog;font-weight: 550;background-color:rgb(162, 11, 11);color:white;font-size: large;padding-right: 30px;padding-left: 30px;">MINT
+                      FREE CARD
+                    </button>
+
+                  </div>
+                  <div class="col-12 col-md-6 justify-content-center p-2 p-md-0">
+                    <button type="button" class="btn btn-rounded" onclick="window.open('../buy/index.html','_blank')"
+                      style="font-family: lazy_dog;font-weight: 550;background-color:rgb(162, 11, 11);color:white;font-size: large;padding-right: 30px;padding-left: 30px;">MINT
+                      VIP PASS </button>
+                  </div>
+                </div>
+              </div>
+              <br><br>
+              <h3 style="font-family: Kollektif;color:white;font-size:medium;line-height: 1.34;letter-spacing: 0.2em;">
+                ONLY FOR 8SIAN VIP PASS HOLDERS. GET YOUR<br> 8SIAN VIP PASS TO BE ELIGIBLE.</h3>
+            </div>
+            <h3 style="font-family: MadelynFill;color:rgb(255, 22, 22);font-size:65px;">
+              Love, 8sian
+            </h3>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade mt-0" id="buy" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1"
+    style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content text-white" style="background-color: rgba(0, 0, 0, 0.8);">
+        <div class="modal-header border-0">
+          <h5>Mint</h5>
+          <button type="button" class="btn-close btn-close-white" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="w-100 mb-4">
+            <img src="mint.gif" class="w-50 d-block m-auto" style="min-width:350px;">
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-7">
+              <div class="row m-0 d-flex justify-content-center mb-3">
+                <div class="col-8">
+                  <button type="button" class="btn btn-outline-light  btn-lg rounded-0" onclick="mint();">Mint
+                    now</button>
+                </div>
+                <div class="col-3 me-0 align-self-center">
+                  <div class="card bg-dark m-auto text-center" id="buyQuantity">
+                    2
+                  </div>
+                </div>
+              </div>
+              <input type="range" id="buyQuantityRange" class="form-range" oninput="changeBuyQuantity(this.value)"
+                onchange="changeBuyQuantity(this.value)" min="1" max="3" step="1" value="2">
+            </div>
+
+
+            <div class="col-5">
+              <div class="row m-0 d-flex justify-content-center mb-3">
+                <div class="col-10 text-center">
+                  <button type="button" class="btn btn-outline-success text-white rounded-0 mb-3"
+                    onclick="connect();">Connect</button>
+
+                  <div class="card bg-danger text-center m-auto">
+                    <small id="connect-info">Not connected</small>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-outline-light rounded-0" data-mdb-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+  <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.html"><\/script>');
+
+    function changeBuyQuantity(Quantity) {
+      document.getElementById("buyQuantity").innerHTML = Quantity;
+    }
+  </script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"
+    integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js"
+    integrity="sha512-jRzb6jM5wynT5UHyMW2+SD+yLsYPEU5uftImpzOcVTdu1J7VsynVmiuFTsitsoL5PJVQi+OtWbrpWq/I+kkF4Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="../js/web3modal.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+    integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../js/main.js"></script>
+  <script src="script129e.js?v=1.7"></script>
+
+
+</body>
+
+
+<!-- Mirrored from 8siannft.com/christmas/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Jan 2022 21:57:42 GMT -->
+</html>
